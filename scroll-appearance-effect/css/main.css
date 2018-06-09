@@ -1,0 +1,17 @@
+img{
+	max-width: 100%;
+	height: auto;
+}
+.pic{
+	max-height: 200px;
+}
+.gallery .pic{
+	opacity: 0;
+	transition: all .5s;
+	transform: scale3d(1.2, 1.2, 1.2);
+	display: inline-block;
+}
+.gallery .showing{
+	opacity: 1;
+	transform: scale3d(1, 1, 1);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row text-center">
+			<div class="col">
+				<h2>Animate</h2>
+				<div class="img">
+					<!-- если мы работаем с библиотекой wow.js то нужно для каждого анимированного элемента указывать класс
+					 wow а потом уже анимацию , если же без wow.js тогда нужно добавлять класс animated а после чего анимацию
+					 так же можно добавить класс infinite для того чтобы анимация не прекращалась-->
+					<img class="wow flipInX" src="img/1.jpg">
+				</div>
+				<div class="img">
+					<img class="wow flipInY" src="img/2.jpg">
+				</div>
+				<div class="img">
+					<img class="wow zoomIn" data-wow-offset="100" src="img/3.jpg">
+				</div>
+				<div class="img">
+					<img class="wow flipInX" src="img/4.jpg">
+				</div>
+				<div class="img">
+					<img class="wow flipInY" src="img/5.jpg">
+				</div>
+				<div class="img">
+					<img class="wow zoomIn" src="img/6.jpg">
+				</div>
+				<div class="img">
+					<img class="wow flipInX" src="img/7.jpg">
+				</div>
+
+
+				<!-- атрибут data задерживает анимацию на указанноге кол-во секунд
+				 вот список всех допустимых атрибутов
+				data-wow-duration: Change the animation duration
+				data-wow-delay: Delay before the animation starts
+				data-wow-offset: Distance to start the animation (related to the browser bottom)
+				data-wow-iteration: Number of times the animation is repeated
+				 -->
+				<div class="img">
+					<img class="wow flipInX" data-wow-offset="100" data-wow-delay=".5s" src="img/1.jpg" width="200">
+					<img class="wow flipInY" data-wow-offset="100" data-wow-delay="1s" src="img/2.jpg" width="200">
+					<img class="wow zoomIn" data-wow-offset="100" data-wow-delay="1.5s" src="img/3.jpg" width="200">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

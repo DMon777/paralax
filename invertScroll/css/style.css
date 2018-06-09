@@ -1,0 +1,30 @@
+
+/*  для элементов которые будет скролится нужно установить positon и bottom : 0 */
+.scroll{
+	position: fixed;
+	bottom: 0;
+}
+.section-3{
+	top: 150px;
+}
+.section-3 > div{
+	background: #000;
+	color: #fff;
+	padding: 10px;
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+}
+.block-1{
+	left: 500px;
+}
+.block-2{
+	left: 2000px;
+}
+.block-3{
+	left: 3500px;
+}
+.block-4{
+	left: 5000px;
+}

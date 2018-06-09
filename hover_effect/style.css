@@ -1,0 +1,43 @@
+body{
+	background: url(img/bg.png);
+	color: #fff;
+	font: 15px/22px "Lora", sans-serif;
+}
+.content{
+	margin-top: 50px;
+}
+.grid-item{
+	background: #fff;
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #000;
+	border: 5px solid #fff;
+	position: relative;
+	margin: 0 auto 30px;
+}
+h3.grid-title{
+	position: absolute;
+	top: 90%;
+	left: 85%;
+	transform: rotate(-90deg);
+	transform-origin: 0 0 0;/* Устанавливает координаты точки, относительно которой будет происходить трансформация элемента. */
+	width: 100%;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: transform .5s, opacity .3s;
+}
+.grid-item img{
+	opacity: .7;
+	transform: scale(1.2, 1.2);
+	transition: transform .5s, opacity .3s;
+}
+.grid-item:hover img{
+	opacity: 1;
+	transform: scale(1, 1);	
+}
+.grid-item:hover h3.grid-title{
+	opacity: 0;
+	transform: translate3d(40px, 0, 0) rotate(-90deg);
+}

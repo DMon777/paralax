@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 100vh;// занимает все доступную высоту
+    overflow: hidden;
+    /* выравниваем содержимое по центру */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+.section-1{
+    background: url(img/1.jpg) center center;
+    background-size: cover;
+}
+.section-2{
+    background: url(img/2.jpg) center center;
+    background-size: cover;
+}
+.section-3{
+    background: url(img/3.jpg) center center;
+    background-size: cover;
+}
